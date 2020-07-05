@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>001_MAYA入坑</title>
+    <url>/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/</url>
+    <content><![CDATA[<h2 id="MAYA-入坑第一天"><a href="#MAYA-入坑第一天" class="headerlink" title=" MAYA 入坑第一天"></a><center> MAYA 入坑第一天</center></h2><h3 id="1-软件下载-amp-安装"><a href="#1-软件下载-amp-安装" class="headerlink" title="1. 软件下载 &amp; 安装"></a><code>1. 软件下载 &amp; 安装</code></h3><p>Maya安装比较简单，点击链接进入AUTODESK官网, 点击下载，选择适合自己电脑的版本即可。</p>
+<div align=center><img src="./001-MAYA入坑/000_MAYA.jpg" width="100%"></div>
+Maya是一款付费软件，但是有30天的免费试用期，过了30天如果想继续使用，需要去官网购买。
+<div align=center><img src="./001-MAYA入坑/000_Mhteng.jpg" width="50%"><center><font face="隶书" color=#008B45 size=2>图片来自网络, 侵权请告知</font></center></div>
+
+
+<p>当然网上有很多破解版，有需要的可以自行了解，笔者也是一个小白，就不瞎推荐了，当然豪们支持正版会更香。</p>
+<div align=center><img src="./001-MAYA入坑/000_piracy.jpg" width="50%"><center><font face="隶书" color=#008B45 size=2>图片来自网络, 侵权请告知</font></center></div>
+
+
+
+<h3 id="2-MAYA简单使用"><a href="#2-MAYA简单使用" class="headerlink" title="2. MAYA简单使用"></a><code>2. MAYA简单使用</code></h3><ol>
+<li><strong>视图导航——Navigation</strong></li>
+</ol>
+<ul>
+<li>旋转视图：ALT + MLB(鼠标左键)，移动鼠标，视图会进行旋转。</li>
+<li>平移视图：ALT + MMB(鼠标滚轮)，移动鼠标，视图会上下移动或者水平移动。</li>
+<li>放大缩小：ALT + MRB(鼠标右键)，移动鼠标，视图会放大或者缩小。</li>
+</ul>
+<ol start="2">
+<li><strong>视配置视图——View Configuration</strong></li>
+</ol>
+<ul>
+<li>保存位置： Files &gt; scences &gt; xx.ma<br>在视图区域选择想要的类型，也支持数字快捷键<div align=center><img src="./001-MAYA入坑/001_view截图1.jpg" width="100%"></div>
+
+</li>
+</ul>
+<p>例如一个圆柱，选择“4”，以“wireFrame”显示，如下图：</p>
+<div align=center><img src="./001-MAYA入坑/001_view截图2.jpg" width="100%"></div>
+
+
+<ol start="3">
+<li><strong>热箱和标记菜单—— the Hotbox and Marking Menus</strong></li>
+</ol>
+<ul>
+<li>热箱<br>长按空格键, 就会出现热箱，上面是所有的菜单按钮<div align=center><img src="./001-MAYA入坑/002_hotbox1.jpg" width="100%"></div>
+</li>
+</ul>
+<ol start="4">
+<li><strong>自定义窗口—— Customize the Interface</strong><br>MAYA支持自定义窗口，以便使用者在创作的时候快速找到当前工作需要的按钮和功能，而不是在茫茫菜单中一个个的去找。<br>MAYA自定义窗口的途径有以下方式：<br>1). Windows &gt; Windows/Preference &gt; preference<br>2). 右下角的快捷按钮(图中右边的箭头所示)<div align=center><img src="./001-MAYA入坑/003_自定义窗口.jpg" width="100%"></div>
+
+</li>
+</ol>
+<p>3). 通过workspace快速配置<br>如下图所示，我们可以选择MAYA已经定义好的样式，例如<code>maya Classic</code>, <code>Modeling Standard</code>, <code>Modeling Expert</code> … 也支持保存自定义的样式，同时可以打开我们自定义好的视图。<br><code>经典样式</code>：</p>
+<div align=center><img src="./001-MAYA入坑/003_自定义窗口1.jpg" width="100%"></div>
+
+<p><code>UV Editing：</code></p>
+<div align=center><img src="./001-MAYA入坑/003_自定义窗口2.jpg" width="100%"></div>
+
+<p><code>保存我们的workspace：</code></p>
+<div align=center><img src="./001-MAYA入坑/003_自定义窗口3.jpg" width="100%"></div>
+
+<ol start="5">
+<li><strong>选择对象—— Select Objects</strong><br>MAYA中选择物体的方法有很多，以下简单介绍一下：<div align=center><img src="./001-MAYA入坑/004_select1.jpg" width="100%"></div>
+
+</li>
+</ol>
+<p>1). 选择单个物体<br>点击 <code>选择工具(Select Tool)</code>, 然后使用鼠标左键点击需要选择的物体，那么当前被点击的物体就被选中/取消选中了。</p>
+<p>2). 选择多个物体<br>使用 <code>选择工具(Select Tool)</code>, 然后使用 <code>SHIFT + MLB(鼠标左键)</code>，点击不同的物体，就可以实现多个物体被选择或者被取消选择。</p>
+<p>3). 框选一个区域进行物体选择<br>鼠标在 <code>选择工具(Select Tool)</code> 状态下，在画布某个区域按下鼠标左键，然后拖拽鼠标，就可以画出一个 矩形, 被当前这个矩形圈住的物体就会被选中。</p>
+<p>4). 套索工具<br>在MAYA的左侧工具栏，选择 <code>套索工具(Lasso Tool)</code>, 然后选择想要的物体或者区域即可。</p>
+<p>5). 使用 Select Menu<br>如果上述方式都满足不了，可以点击菜单栏上面的的 <code>选择菜单(Select Menu)</code>。从上面的展开图中我们可以看到，选择菜单有很多的选项，有 按相似度选择, 根据形状选择…… 使用者可以根据自己的需要进行选择。</p>
+<p>6). <code>CTRL + SHIFT + A</code> 快捷键选中所有物体。</p>
+<hr>
+<blockquote>
+<ul>
+<li>作者：孤城·慕雪</li>
+<li>时间：22020-06-25 12:43:57</li>
+<li>版权所有，欢迎保留原文链接进行转载<code>^_^</code></li>
+<li>欢迎大家进行评论指正，一起交流学习，共同进步</li>
+</ul>
+</blockquote>
+<hr>
+]]></content>
+      <tags>
+        <tag>skills</tag>
+        <tag>maya</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/07/05/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>002_MAYA物体移动等操作</title>
+    <url>/2020/06/26/002-MAYA%E7%89%A9%E4%BD%93%E7%A7%BB%E5%8A%A8%E7%AD%89%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h2 id="MAYA-物体移动、旋转等操作"><a href="#MAYA-物体移动、旋转等操作" class="headerlink" title=" MAYA 物体移动、旋转等操作 "></a><center> MAYA 物体移动、旋转等操作 </center></h2><iframe 
+    width="100%" 
+    height="350" 
+    src='https://player.youku.com/embed/XNDcyODM0MTEwNA=='
+    scrolling="no"
+    border="0"
+    frameborder="no"
+    framespacing="0" 
+    'allowfullscreen'>
+</iframe>
+
+
+<hr>
+<blockquote>
+<ul>
+<li>作者：孤城·慕雪</li>
+<li>时间：2020-06-26 06:34:52</li>
+<li>版权所有，欢迎保留原文链接进行转载<code>^_^</code></li>
+<li>欢迎大家进行评论指正，一起交流学习，共同进步</li>
+</ul>
+</blockquote>
+<hr>
+]]></content>
+  </entry>
+</search>

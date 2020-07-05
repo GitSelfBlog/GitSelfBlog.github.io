@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Daily Learning</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://topai.cloud/"/>
+  <updated>2020-07-04T17:15:45.781Z</updated>
+  <id>http://topai.cloud/</id>
+  
+  <author>
+    <name>孤城·慕雪</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://topai.cloud/2020/07/05/hello-world/"/>
+    <id>http://topai.cloud/2020/07/05/hello-world/</id>
+    <published>2020-07-04T17:15:45.781Z</published>
+    <updated>2020-07-04T17:15:45.781Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>002_MAYA物体移动等操作</title>
+    <link href="http://topai.cloud/2020/06/26/002-MAYA%E7%89%A9%E4%BD%93%E7%A7%BB%E5%8A%A8%E7%AD%89%E6%93%8D%E4%BD%9C/"/>
+    <id>http://topai.cloud/2020/06/26/002-MAYA%E7%89%A9%E4%BD%93%E7%A7%BB%E5%8A%A8%E7%AD%89%E6%93%8D%E4%BD%9C/</id>
+    <published>2020-06-25T22:34:52.000Z</published>
+    <updated>2020-07-05T05:22:02.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;MAYA-物体移动、旋转等操作&quot;&gt;&lt;a href=&quot;#MAYA-物体移动、旋转等操作&quot; class=&quot;headerlink&quot; title=&quot; MAYA 物体移动、旋转等操作 &quot;&gt;&lt;/a&gt;&lt;center&gt; MAYA 物体移动、旋转等操作
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>001_MAYA入坑</title>
+    <link href="http://topai.cloud/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/"/>
+    <id>http://topai.cloud/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/</id>
+    <published>2020-06-25T04:43:57.000Z</published>
+    <updated>2020-07-05T05:12:42.381Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;MAYA-入坑第一天&quot;&gt;&lt;a href=&quot;#MAYA-入坑第一天&quot; class=&quot;headerlink&quot; title=&quot; MAYA 入坑第一天&quot;&gt;&lt;/a&gt;&lt;center&gt; MAYA 入坑第一天&lt;/center&gt;&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+      <category term="maya" scheme="http://topai.cloud/tags/maya/"/>
+    
+  </entry>
+  
+</feed>
