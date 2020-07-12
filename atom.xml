@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://topai.cloud/"/>
-  <updated>2020-07-04T17:15:45.781Z</updated>
+  <updated>2020-07-11T16:18:30.563Z</updated>
   <id>http://topai.cloud/</id>
   
   <author>
@@ -17,11 +17,177 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://topai.cloud/2020/07/05/hello-world/"/>
-    <id>http://topai.cloud/2020/07/05/hello-world/</id>
-    <published>2020-07-04T17:15:45.781Z</published>
-    <updated>2020-07-04T17:15:45.781Z</updated>
+    <title>MAYA物体移动等操作</title>
+    <link href="http://topai.cloud/2020/06/26/002-MAYA%E7%89%A9%E4%BD%93%E7%A7%BB%E5%8A%A8%E7%AD%89%E6%93%8D%E4%BD%9C/"/>
+    <id>http://topai.cloud/2020/06/26/002-MAYA%E7%89%A9%E4%BD%93%E7%A7%BB%E5%8A%A8%E7%AD%89%E6%93%8D%E4%BD%9C/</id>
+    <published>2020-06-25T22:34:52.000Z</published>
+    <updated>2020-07-11T16:18:30.563Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;iframe width=&quot;100%&quot; height=&quot;350&quot; src=&quot;https://player.youku.com/embed/XNDcyODM0MTEwNA==&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+      <category term="maya" scheme="http://topai.cloud/tags/maya/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MAYA入坑</title>
+    <link href="http://topai.cloud/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/"/>
+    <id>http://topai.cloud/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/</id>
+    <published>2020-06-25T04:43:57.000Z</published>
+    <updated>2020-07-11T16:22:29.354Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1-软件下载-amp-安装&quot;&gt;&lt;a href=&quot;#1-软件下载-amp-安装&quot; class=&quot;headerlink&quot; title=&quot;1. 软件下载 &amp;amp; 安装&quot;&gt;&lt;/a&gt;&lt;code&gt;1. 软件下载 &amp;amp;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+      <category term="maya" scheme="http://topai.cloud/tags/maya/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构-栈</title>
+    <link href="http://topai.cloud/2020/05/01/004-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88/"/>
+    <id>http://topai.cloud/2020/05/01/004-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88/</id>
+    <published>2020-05-01T02:11:18.000Z</published>
+    <updated>2020-07-12T06:43:22.323Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-基本原理&quot;&gt;&lt;a href=&quot;#1-基本原理&quot; class=&quot;headerlink&quot; title=&quot;1. 基本原理&quot;&gt;&lt;/a&gt;1.
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+      <category term="DataStructure" scheme="http://topai.cloud/tags/DataStructure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构-链表</title>
+    <link href="http://topai.cloud/2020/04/27/003-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%93%BE%E8%A1%A8/"/>
+    <id>http://topai.cloud/2020/04/27/003-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%93%BE%E8%A1%A8/</id>
+    <published>2020-04-26T16:10:54.000Z</published>
+    <updated>2020-07-11T16:20:35.928Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+      <category term="DataStructure" scheme="http://topai.cloud/tags/DataStructure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构数组</title>
+    <link href="http://topai.cloud/2020/04/25/002-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%95%B0%E7%BB%84/"/>
+    <id>http://topai.cloud/2020/04/25/002-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%95%B0%E7%BB%84/</id>
+    <published>2020-04-24T16:10:11.000Z</published>
+    <updated>2020-07-12T06:50:08.946Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+      <category term="DataStructure" scheme="http://topai.cloud/tags/DataStructure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构概述</title>
+    <link href="http://topai.cloud/2020/04/24/001-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A6%82%E8%BF%B0/"/>
+    <id>http://topai.cloud/2020/04/24/001-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A6%82%E8%BF%B0/</id>
+    <published>2020-04-23T16:09:43.000Z</published>
+    <updated>2020-07-12T06:50:05.567Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+      <category term="DataStructure" scheme="http://topai.cloud/tags/DataStructure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git常规操作命令</title>
+    <link href="http://topai.cloud/2019/10/12/001-Git%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
+    <id>http://topai.cloud/2019/10/12/001-Git%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</id>
+    <published>2019-10-12T06:45:28.000Z</published>
+    <updated>2020-07-12T07:26:00.189Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-Gitlab-分支操作&quot;&gt;&lt;a href=&quot;#1-Gitlab-分支操作&quot; class=&quot;headerlink&quot; title=&quot;1. Gitlab 分支操作&quot;&gt;&lt;/a&gt;1. Gitlab 分支操作&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;(1).
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
+    
+      <category term="Github" scheme="http://topai.cloud/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello Hexo Blog</title>
+    <link href="http://topai.cloud/2019/10/01/hello-world/"/>
+    <id>http://topai.cloud/2019/10/01/hello-world/</id>
+    <published>2019-10-01T02:11:18.000Z</published>
+    <updated>2020-07-12T06:47:58.787Z</updated>
     
     <summary type="html">
     
@@ -38,60 +204,6 @@
     
     
       <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>002_MAYA物体移动等操作</title>
-    <link href="http://topai.cloud/2020/06/26/002-MAYA%E7%89%A9%E4%BD%93%E7%A7%BB%E5%8A%A8%E7%AD%89%E6%93%8D%E4%BD%9C/"/>
-    <id>http://topai.cloud/2020/06/26/002-MAYA%E7%89%A9%E4%BD%93%E7%A7%BB%E5%8A%A8%E7%AD%89%E6%93%8D%E4%BD%9C/</id>
-    <published>2020-06-25T22:34:52.000Z</published>
-    <updated>2020-07-05T05:32:15.615Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;MAYA-物体移动、旋转等操作&quot;&gt;&lt;a href=&quot;#MAYA-物体移动、旋转等操作&quot; class=&quot;headerlink&quot; title=&quot; MAYA 物体移动、旋转等操作 &quot;&gt;&lt;/a&gt;&lt;center&gt; MAYA 物体移动、旋转等操作
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
-    
-      <category term="maya" scheme="http://topai.cloud/tags/maya/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>001_MAYA入坑</title>
-    <link href="http://topai.cloud/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/"/>
-    <id>http://topai.cloud/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/</id>
-    <published>2020-06-25T04:43:57.000Z</published>
-    <updated>2020-07-05T06:06:20.488Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;MAYA-入坑第一天&quot;&gt;&lt;a href=&quot;#MAYA-入坑第一天&quot; class=&quot;headerlink&quot; title=&quot; MAYA 入坑第一天&quot;&gt;&lt;/a&gt;&lt;center&gt; MAYA 入坑第一天&lt;/center&gt;&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="skills" scheme="http://topai.cloud/tags/skills/"/>
-    
-      <category term="maya" scheme="http://topai.cloud/tags/maya/"/>
     
   </entry>
   

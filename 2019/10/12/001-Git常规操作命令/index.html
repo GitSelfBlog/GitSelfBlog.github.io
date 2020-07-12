@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    技术集 |  Daily Learning
+    Git常规操作命令 |  Daily Learning
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -48,8 +48,8 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="page-"
-  class="article article-type-page"
+  id="post-001-Git常规操作命令"
+  class="article article-type-post"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
@@ -59,15 +59,114 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  技术集
+  Git常规操作命令
 </h1>
  
 
     </header>
-       
+     
+    <div class="article-meta">
+      <a href="/2019/10/12/001-Git%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time datetime="2019-10-12T06:45:28.000Z" itemprop="datePublished">2019-10-12</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">758</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">3 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
     <div class="article-entry" itemprop="articleBody">
        
-   
+  <h4 id="1-Gitlab-分支操作"><a href="#1-Gitlab-分支操作" class="headerlink" title="1. Gitlab 分支操作"></a>1. Gitlab 分支操作</h4><blockquote>
+<p>(1). 配置上游项目地址。</p>
+</blockquote>
+<p>假设：我在某个仓库(github/fork-demo.git) fork 了一个分支，我的项目就是 github666/fork-demo.git。使用以下命令来配置。</p>
+<p><strong>操作步骤：</strong></p>
+<pre><code>&gt; git remote add upstream https://github.com/github/fork-demo.git
+
+然后可以查看一下配置状况，很好，上游项目的地址已经被加进来了。
+&gt; git remote -v
+
+origin  git@github.com:github666/fork-demo.git (fetch)
+origin  git@github.com:github666/fork-demo.git (push)
+upstream  https://github.com/github/fork-demo.git (fetch)
+upstream  https://github.com/github/fork-demo.git (push)</code></pre><blockquote>
+<p>(2). 配置其他人的代码仓库。</p>
+</blockquote>
+<p>在实际的团队开发过程中，经常需要拉取别人仓库某个分支的代码，这个时候就需要别人将我们添加到他的Git仓库中并赋予权限。然后我们使用Git操作命令将其仓库的SSH添加到我们本地的fork中，就可以拉取别人的代码了。</p>
+<pre><code>&gt; git remote add [name] [SSH]
+...
+&gt; git pull [name] [branchname]
+...
+
+// 1、 Git 查看远端的分支名(前提是有仓库的权限, 这个仓库可以是自己的，也可以是别人的)
+
+&gt; git remote show [远端仓库名，例如upstream、origin...]
+...
+&gt; git ls-remote &lt;remote-name&gt; 可以看到head信息
+...
+&gt; git  remote -r 获取当前remote的所有分支
+...
+
+
+// 2、获取上游项目更新。
+使用 fetch 命令更新，fetch 后会被存储在一个本地分支 upstream/master 上。
+&gt; git fetch upstream
+
+
+// 3、合并到本地分支。切换到 master 分支，合并 upstream/master 分支。
+&gt; git merge upstream/master
+
+4、提交推送。根据自己情况提交推送自己项目的代码。
+&gt; git push origin master
+
+// 由于项目已经配置了上游项目的地址，所以如果 fork 的项目再次更新，重复步骤 2、3、4即可。</code></pre><h4 id="2-Gitlab-冲突解决"><a href="#2-Gitlab-冲突解决" class="headerlink" title="2. Gitlab 冲突解决"></a>2. Gitlab 冲突解决</h4><p>一般在拉取代码的时候会有冲突，如果不想解决冲突，想直接放弃拉取的新代码，直接执行下面的指令即可，本地的修改依然在.</p>
+<pre><code>&gt; git merge --abort
+
+&gt; git reset --merge</code></pre><h4 id="3-Gitlab-删除远程-本地分支的命令"><a href="#3-Gitlab-删除远程-本地分支的命令" class="headerlink" title="3. Gitlab 删除远程/本地分支的命令"></a>3. Gitlab 删除远程/本地分支的命令</h4><pre><code>// 1. 删除远程分支：
+&gt; git push origin --delete [branchName]
+
+// 2. 删除本地分支：
+&gt; git branch -d [banchName]</code></pre><h4 id="4-Gitlab-代码版本撤回"><a href="#4-Gitlab-代码版本撤回" class="headerlink" title="4. Gitlab 代码版本撤回"></a>4. Gitlab 代码版本撤回</h4><pre><code>// 查看所有的commit信息，其中最前面的数字就是git 的commit信息，也就是版本号
+&gt; git reflog
+
+// 只是改变HEAD的指向，本地代码不会改变
+git reset --soft [版本号]
+
+// 改变HEAD指向的同时，本地的源代码也会发生变化
+git reset --hard [版本号]</code></pre><p><strong><code>注意：</code></strong> <a href>版本号</a> 是要回退到的版本号, 例如现在的版本号是1， 上一个版本代码的版本号是2，现在要回到上一次版本的代码，这里输入的版本号应当是2，不是1。</p>
+<hr>
+<blockquote>
+<ul>
+<li>作者：孤城·慕雪</li>
+<li>时间：2019-10-12 14:45:28</li>
+<li>版权所有，欢迎保留原文链接进行转载<code>^_^</code></li>
+<li>欢迎大家进行评论指正，一起交流学习，共同进步</li>
+</ul>
+</blockquote>
+<hr>
+ 
       <!-- reward -->
       
     </div>
@@ -129,15 +228,36 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://topai.cloud/skills/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://topai.cloud/2019/10/12/001-Git%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/skills/" rel="tag">skills</a></li></ul>
+
     </footer>
   </div>
 
    
+  <nav class="article-nav">
+    
+      <a href="/2020/04/24/001-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A6%82%E8%BF%B0/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            数据结构概述
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2019/10/01/hello-world/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Hello Hexo Blog</div>
+      </a>
+    
+  </nav>
+
    
 <!-- valine评论 -->
 <div id="vcomments-box">
@@ -187,7 +307,7 @@
 </style>
 
  
-   
+     
 </article>
 
 </section>
@@ -328,6 +448,23 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">

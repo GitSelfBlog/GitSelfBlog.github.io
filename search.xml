@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>001_MAYA入坑</title>
+    <title>MAYA入坑</title>
     <url>/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/</url>
-    <content><![CDATA[<h2 id="MAYA-入坑第一天"><a href="#MAYA-入坑第一天" class="headerlink" title=" MAYA 入坑第一天"></a><center> MAYA 入坑第一天</center></h2><h3 id="1-软件下载-amp-安装"><a href="#1-软件下载-amp-安装" class="headerlink" title="1. 软件下载 &amp; 安装"></a><code>1. 软件下载 &amp; 安装</code></h3><p>Maya安装比较简单，点击链接进入AUTODESK官网, 点击下载，选择适合自己电脑的版本即可。</p>
+    <content><![CDATA[<h3 id="1-软件下载-amp-安装"><a href="#1-软件下载-amp-安装" class="headerlink" title="1. 软件下载 &amp; 安装"></a><code>1. 软件下载 &amp; 安装</code></h3><p>Maya安装比较简单，点击链接进入AUTODESK官网, 点击下载，选择适合自己电脑的版本即可。</p>
 <div align="center"><img src="/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/000_MAYA.jpg" width="100%"></div>
 Maya是一款付费软件，但是有30天的免费试用期，过了30天如果想继续使用，需要去官网购买。
 <div align="center"><img src="/2020/06/25/001-MAYA%E5%85%A5%E5%9D%91/000_Mhteng.jpg" width="50%"><center><font face="隶书" color="#008B45" size="2">图片来自网络, 侵权请告知</font></center></div>
@@ -66,7 +66,7 @@ Maya是一款付费软件，但是有30天的免费试用期，过了30天如果
 <blockquote>
 <ul>
 <li>作者：孤城·慕雪</li>
-<li>时间：22020-06-25 12:43:57</li>
+<li>时间：2020-06-25 12:43:57</li>
 <li>版权所有，欢迎保留原文链接进行转载<code>^_^</code></li>
 <li>欢迎大家进行评论指正，一起交流学习，共同进步</li>
 </ul>
@@ -79,9 +79,95 @@ Maya是一款付费软件，但是有30天的免费试用期，过了30天如果
       </tags>
   </entry>
   <entry>
-    <title>002_MAYA物体移动等操作</title>
+    <title>数据结构概述</title>
+    <url>/2020/04/24/001-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>skills</tag>
+        <tag>DataStructure</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git常规操作命令</title>
+    <url>/2019/10/12/001-Git%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h4 id="1-Gitlab-分支操作"><a href="#1-Gitlab-分支操作" class="headerlink" title="1. Gitlab 分支操作"></a>1. Gitlab 分支操作</h4><blockquote>
+<p>(1). 配置上游项目地址。</p>
+</blockquote>
+<p>假设：我在某个仓库(github/fork-demo.git) fork 了一个分支，我的项目就是 github666/fork-demo.git。使用以下命令来配置。</p>
+<p><strong>操作步骤：</strong></p>
+<pre><code>&gt; git remote add upstream https://github.com/github/fork-demo.git
+
+然后可以查看一下配置状况，很好，上游项目的地址已经被加进来了。
+&gt; git remote -v
+
+origin  git@github.com:github666/fork-demo.git (fetch)
+origin  git@github.com:github666/fork-demo.git (push)
+upstream  https://github.com/github/fork-demo.git (fetch)
+upstream  https://github.com/github/fork-demo.git (push)</code></pre><blockquote>
+<p>(2). 配置其他人的代码仓库。</p>
+</blockquote>
+<p>在实际的团队开发过程中，经常需要拉取别人仓库某个分支的代码，这个时候就需要别人将我们添加到他的Git仓库中并赋予权限。然后我们使用Git操作命令将其仓库的SSH添加到我们本地的fork中，就可以拉取别人的代码了。</p>
+<pre><code>&gt; git remote add [name] [SSH]
+...
+&gt; git pull [name] [branchname]
+...
+
+// 1、 Git 查看远端的分支名(前提是有仓库的权限, 这个仓库可以是自己的，也可以是别人的)
+
+&gt; git remote show [远端仓库名，例如upstream、origin...]
+...
+&gt; git ls-remote &lt;remote-name&gt; 可以看到head信息
+...
+&gt; git  remote -r 获取当前remote的所有分支
+...
+
+
+// 2、获取上游项目更新。
+使用 fetch 命令更新，fetch 后会被存储在一个本地分支 upstream/master 上。
+&gt; git fetch upstream
+
+
+// 3、合并到本地分支。切换到 master 分支，合并 upstream/master 分支。
+&gt; git merge upstream/master
+
+4、提交推送。根据自己情况提交推送自己项目的代码。
+&gt; git push origin master
+
+// 由于项目已经配置了上游项目的地址，所以如果 fork 的项目再次更新，重复步骤 2、3、4即可。</code></pre><h4 id="2-Gitlab-冲突解决"><a href="#2-Gitlab-冲突解决" class="headerlink" title="2. Gitlab 冲突解决"></a>2. Gitlab 冲突解决</h4><p>一般在拉取代码的时候会有冲突，如果不想解决冲突，想直接放弃拉取的新代码，直接执行下面的指令即可，本地的修改依然在.</p>
+<pre><code>&gt; git merge --abort
+
+&gt; git reset --merge</code></pre><h4 id="3-Gitlab-删除远程-本地分支的命令"><a href="#3-Gitlab-删除远程-本地分支的命令" class="headerlink" title="3. Gitlab 删除远程/本地分支的命令"></a>3. Gitlab 删除远程/本地分支的命令</h4><pre><code>// 1. 删除远程分支：
+&gt; git push origin --delete [branchName]
+
+// 2. 删除本地分支：
+&gt; git branch -d [banchName]</code></pre><h4 id="4-Gitlab-代码版本撤回"><a href="#4-Gitlab-代码版本撤回" class="headerlink" title="4. Gitlab 代码版本撤回"></a>4. Gitlab 代码版本撤回</h4><pre><code>// 查看所有的commit信息，其中最前面的数字就是git 的commit信息，也就是版本号
+&gt; git reflog
+
+// 只是改变HEAD的指向，本地代码不会改变
+git reset --soft [版本号]
+
+// 改变HEAD指向的同时，本地的源代码也会发生变化
+git reset --hard [版本号]</code></pre><p><strong><code>注意：</code></strong> <a href>版本号</a> 是要回退到的版本号, 例如现在的版本号是1， 上一个版本代码的版本号是2，现在要回到上一次版本的代码，这里输入的版本号应当是2，不是1。</p>
+<hr>
+<blockquote>
+<ul>
+<li>作者：孤城·慕雪</li>
+<li>时间：2019-10-12 14:45:28</li>
+<li>版权所有，欢迎保留原文链接进行转载<code>^_^</code></li>
+<li>欢迎大家进行评论指正，一起交流学习，共同进步</li>
+</ul>
+</blockquote>
+<hr>
+]]></content>
+      <tags>
+        <tag>skills</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MAYA物体移动等操作</title>
     <url>/2020/06/26/002-MAYA%E7%89%A9%E4%BD%93%E7%A7%BB%E5%8A%A8%E7%AD%89%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<h2 id="MAYA-物体移动、旋转等操作"><a href="#MAYA-物体移动、旋转等操作" class="headerlink" title=" MAYA 物体移动、旋转等操作 "></a><center> MAYA 物体移动、旋转等操作 </center></h2><iframe width="100%" height="350" src="https://player.youku.com/embed/XNDcyODM0MTEwNA==" scrolling="no" border="0" frameborder="no" framespacing="0" 'allowfullscreen'>
+    <content><![CDATA[<iframe width="100%" height="350" src="https://player.youku.com/embed/XNDcyODM0MTEwNA==" scrolling="no" border="0" frameborder="no" framespacing="0" 'allowfullscreen'>
 </iframe>
 
 
@@ -102,8 +188,67 @@ Maya是一款付费软件，但是有30天的免费试用期，过了30天如果
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/07/05/hello-world/</url>
+    <title>数据结构-链表</title>
+    <url>/2020/04/27/003-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%93%BE%E8%A1%A8/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>skills</tag>
+        <tag>DataStructure</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构数组</title>
+    <url>/2020/04/25/002-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>skills</tag>
+        <tag>DataStructure</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构-栈</title>
+    <url>/2020/05/01/004-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88/</url>
+    <content><![CDATA[<h4 id="1-基本原理"><a href="#1-基本原理" class="headerlink" title="1. 基本原理"></a>1. 基本原理</h4><p>栈是一种<strong>线性</strong>数据结构，按照特定的顺序进行数据操作(进栈/出栈)。栈的数据操作遵循『先进后出(FILO)』或『后进先出(LIFO)』的原则。</p>
+<div align="center"><img src="/2020/05/01/004-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88/stack1.jpg" width="50%"></div>
+
+<p>类似于栈这种数据结构在生活中也是很常见的。例如：我们有一个羽毛球筒(不被破坏的情况下，只能一端 “装入/取出” 羽毛球)。现在将7个不同颜色的羽毛球装在里面，假设第一个被装入羽毛球的颜色是红色的，然后陆续将其他颜色的羽毛球装入，最后一个羽毛球的颜色是蓝色的。<br>现在，第一个装入的红色羽毛球在筒底，最后一个装进的篮球色羽毛球在筒顶。如果想取羽毛球，第一个会被拿出来的是蓝色的，也就是最后一个被装入的羽毛球。这是一个简单的 <strong><code>栈</code></strong> 的例子。</p>
+<h4 id="2-基本操作"><a href="#2-基本操作" class="headerlink" title="2. 基本操作"></a>2. 基本操作</h4><ul>
+<li><p><strong>入栈</strong><br>向栈中压入元素的过程。如果栈已经满了，则抛出 <strong><code>栈溢出</code></strong> 异常。</p>
+</li>
+<li><p><strong>出栈</strong><br>将栈中的元素从栈里面取出的过程。元素的弹出顺序与它们被推入的顺序相反，这是栈的性质决定的。如果栈是空栈，则抛出 <strong><code>空指针</code></strong> 异常。</p>
+</li>
+<li><p><strong>Peek/Top</strong><br>返回栈顶元素的过程。</p>
+</li>
+<li><p><strong>isEmpty</strong><br>用来判断栈是否为空。如果是空栈，则返回true，否则返回false。</p>
+</li>
+</ul>
+<h4 id="3-应用场景"><a href="#3-应用场景" class="headerlink" title="3. 应用场景"></a>3. 应用场景</h4><ul>
+<li>浏览器的前进和回退</li>
+<li>Undo和Redo<h4 id="4-栈的实现"><a href="#4-栈的实现" class="headerlink" title="4. 栈的实现"></a>4. 栈的实现</h4></li>
+<li>使用数组</li>
+<li>使用链表<br><code>使用数组的例子</code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">static MAX : number &#x3D; 1000;</span><br><span class="line">export class Stack &#123;</span><br><span class="line">    private top: number;</span><br><span class="line">    private arr: number[] &#x3D; Array(MAX);</span><br><span class="line"></span><br><span class="line">    constructor() &#123;</span><br><span class="line">        this.top &#x3D; -1;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public isEmpty(): boolean &#123;</span><br><span class="line">        this.top &lt; 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public push(n: number): boolean &#123;</span><br><span class="line">        if (this.top &gt;&#x3D; (MAX - 1)) return falsel;</span><br><span class="line">        this.top +&#x3D; 1;</span><br><span class="line">        this.arr[this.top] &#x3D; n;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public pop(): number &#123;</span><br><span class="line">        if (this.top &lt; 0) return null;</span><br><span class="line">        const x &#x3D; this.arr.pop();</span><br><span class="line">        this.top -&#x3D; 1;</span><br><span class="line">        return x;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public peek(): number &#123; </span><br><span class="line">        if (this.top &lt; 0) return null;</span><br><span class="line">        const x &#x3D; this.arr[this.top]; </span><br><span class="line">        return x; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<blockquote>
+<ul>
+<li>作者：孤城·慕雪</li>
+<li>时间：2020-05-01 10:11:18</li>
+<li>版权所有，欢迎保留原文链接进行转载<code>^_^</code></li>
+<li>欢迎大家进行评论指正，一起交流学习，共同进步</li>
+</ul>
+</blockquote>
+<hr>
+]]></content>
+      <tags>
+        <tag>skills</tag>
+        <tag>DataStructure</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello Hexo Blog</title>
+    <url>/2019/10/01/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
