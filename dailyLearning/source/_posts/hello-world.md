@@ -1,5 +1,6 @@
 ---
-title: Hello World
+title: Hello Hexo Blog
+date: 2019-10-01 10:11:18
 tags:  
 - skills
 ---

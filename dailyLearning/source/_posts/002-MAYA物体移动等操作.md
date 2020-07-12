@@ -1,12 +1,10 @@
 ---
-title: 002_MAYA物体移动等操作
+title: MAYA物体移动等操作
 date: 2020-06-26 06:34:52
 tags:
 - skills
 - maya
 ---
-
-## <center> MAYA 物体移动、旋转等操作 </center> 
 
 <iframe 
     width="100%" 
